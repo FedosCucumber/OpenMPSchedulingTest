@@ -21,3 +21,9 @@ This makes the time complexity of the algoritm to be *O(nr)*.
 ## Sheduling comparisson 
 
 One of the most popular ways to use OpenMP is to parallelize loops. This can be achieve using different verious scheduling options 
+- static. This means loop iterations will ber equally distributed between threads
+- static, $x$. This means that each thread will get an $x$ amount of iterations
+- dynamic, $x$. This means that each thread get $x$ iterations and "asks" for new iterations after completing previously assigned ones.
+
+I calculated the run-time of the programm using various policies, carious thread pool size and various x values. The results are:
+![all-text](https://ibb.co/rHjW9Kv][img]https://i.ibb.co/WfhTCNs/Graph1.png)
