@@ -27,3 +27,4 @@ One of the most popular ways to use OpenMP is to parallelize loops. This can be 
 
 I calculated the run-time of the programm using various policies, carious thread pool size and various x values. The results are:
 [![Graph1.png](https://i.postimg.cc/5tNdrxpV/Graph1.png)](https://postimg.cc/9DSnRHv8)
+[![Graph2.png](https://i.postimg.cc/7YgFYCW4/Graph2.png)](https://postimg.cc/2VSc05Y9)
