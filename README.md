@@ -27,7 +27,10 @@ One of the most popular ways to use OpenMP is to parallelize loops. This can be 
 
 I calculated the run-time of the programm using various policies, carious thread pool size and various chunk_size($x$) values. The results are:
 [![Graph1.png](https://i.postimg.cc/5tNdrxpV/Graph1.png)](https://postimg.cc/9DSnRHv8)
+
 [![Graph2.png](https://i.postimg.cc/7YgFYCW4/Graph2.png)](https://postimg.cc/2VSc05Y9)
+
 [![graph3.png](https://i.postimg.cc/FzvxPKgb/graph3.png)](https://postimg.cc/9RxT0Ckz)
+
 
 To get thus results, I used the average of 5 runs. The results show that maxing out the thread pool size with out passing over the harware limit of supported threads yields the best results. Dynamic and static scheduling show almost equal results on this algorithm. I think the reason behind this is that I still use a fixed-size thread pool for each run with out any other processes in the backgtound. Maxing out the chunk_size seems to limit the amount of threads used making the programm slower.
