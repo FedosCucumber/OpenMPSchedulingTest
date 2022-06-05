@@ -8,4 +8,4 @@ $ g(x, y) = e^\frac{x^2+y^2}{2\sigma^2} $. Result of the function are used to cr
 
 Applying gaussian blur directly can proove to be rather time-consuming. What we need is some form of approximation of the blur. This example uses the box blur aaproximation technique. Lets define the horizontal and total blur:
 
-$$ b_h[i, j] = \sum_{x=j-br}_{j+br}$$
+$$ b_h[i, j] = \sum_{x=j-br}{j+br}$$
